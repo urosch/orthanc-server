@@ -141,6 +141,14 @@
     "libs" : ["libDelayedDeletion.so"]
   },
 
+  "AdvancedStorage" : {
+    "nonStandardDefaults" : {
+      "Enable" : true
+    },
+    "enablingEnvVar" : "ADVANCED_STORAGE_PLUGIN_ENABLED",
+    "libs" : ["libAdvancedStorage.so"]
+  },
+
   "Wsi": {
     "enablingEnvVar" : "WSI_PLUGIN_ENABLED",
     "enablingEnvVarLegacy" : "WSI_ENABLED",

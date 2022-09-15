@@ -45,10 +45,10 @@
             "sourcesSubPath": "/OrthancServer",
             "comment": "# CHANGE_VERSION_ORTHANC",
             "stable": "Orthanc-1.11.2",
-            "unstable": "default",
+            "unstable": "attach-custom-data",
             "stableOSX": "Orthanc-1.11.2",
-            "artifactsOSX": "Orthanc libModalityWorklists.dylib libServeFolders.dylib libConnectivityChecks.dylib libHousekeeper.dylib libDelayedDeletion.dylib",
-            "unstableArtifactsOSX": "Orthanc libModalityWorklists.dylib libServeFolders.dylib libConnectivityChecks.dylib libHousekeeper.dylib libDelayedDeletion.dylib",
+            "artifactsOSX": "Orthanc libModalityWorklists.dylib libServeFolders.dylib libConnectivityChecks.dylib libHousekeeper.dylib libDelayedDeletion.dylib libAdvancedStorage.dylib",
+            "unstableArtifactsOSX": "Orthanc libModalityWorklists.dylib libServeFolders.dylib libConnectivityChecks.dylib libHousekeeper.dylib libDelayedDeletion.dylib libAdvancedStorage.dylib",
             "extraCMakeFlagsOSX": "-DUSE_LEGACY_BOOST=ON -DUSE_LEGACY_LIBICU=ON -DBOOST_LOCALE_BACKEND=icu",
             "unitTests": "./UnitTests",
             "buildForOSX": true,
@@ -131,6 +131,18 @@
                     ]
                 },
                 {
+                    "Description": "Advanced Storage",
+                    "Mandatory": false,
+                    "Category": "plugins",
+                    "Artifacts64": [
+                    ],
+                    "Artifacts32": [
+                    ],
+                    "Resources": [
+                        ["advanced-storage.json", "Configuration"]
+                    ]
+                },
+                {
                     "Description": "Maintenance tool to recover files compressed by Orthanc",
                     "Mandatory": false,
                     "Category": "tools",
@@ -150,10 +162,10 @@
             "sourcesSubPath": "/PostgreSQL",
             "comment": "# CHANGE_VERSION_PG",
             "stable": "OrthancPostgreSQL-4.0",
-            "unstable": "default",
+            "unstable": "attach-custom-data",
             "artifactsOSX": "libOrthancPostgreSQLIndex.dylib libOrthancPostgreSQLStorage.dylib",
             "buildForOSX": true,
-            "extraCMakeFlags": "-DORTHANC_SDK_VERSION=1.9.2",
+            "extraCMakeFlags": "-DORTHANC_FRAMEWORK_SOURCE=hg -DORTHANC_FRAMEWORK_BRANCH=mainline",
             "windows": [{
                 "Description": "PostgreSQL backend (AGPL license)",
                 "Mandatory": false,
@@ -178,10 +190,10 @@
             "sourcesSubPath": "/MySQL",
             "comment": "# CHANGE_VERSION_MYSQL",
             "stable": "OrthancMySQL-4.3",
-            "unstable": "default",
+            "unstable": "attach-custom-data",
             "artifactsOSX": "libOrthancMySQLIndex.dylib libOrthancMySQLStorage.dylib",
             "buildForOSX": true,
-            "extraCMakeFlags": "-DORTHANC_SDK_VERSION=1.9.2",
+            "extraCMakeFlags": "-DORTHANC_FRAMEWORK_SOURCE=hg -DORTHANC_FRAMEWORK_BRANCH=mainline",
             "windows": [{
                 "Description": "MySQL backend (AGPL license)",
                 "Name": "mysql",
@@ -207,10 +219,10 @@
             "sourcesSubPath": "/Odbc",
             "comment": "# CHANGE_VERSION_ODBC",
             "stable": "OrthancOdbc-1.1",
-            "unstable": "default",
+            "unstable": "attach-custom-data",
             "artifactsOSX": "libOrthancOdbcIndex.dylib libOrthancOdbcStorage.dylib",
             "buildForOSX": true,
-            "extraCMakeFlags": "-DORTHANC_SDK_VERSION=1.9.2",
+            "extraCMakeFlags": "-DORTHANC_FRAMEWORK_SOURCE=hg -DORTHANC_FRAMEWORK_BRANCH=mainline",
             "windows": [{
                 "Description": "ODBC backend (AGPL license)",
                 "Mandatory": false,

@@ -23,6 +23,7 @@ Serve folders plugin                  1.11.2
 Connectivity check plugin             1.11.2
 Housekeeper plugin                    1.11.2
 Delayed Deletion plugin               1.11.2
+Advanced Storage plugin               XXXXXXX
 Stone Web viewer plugin               2.3
 Osimis Web viewer plugin              1.4.2
 Orthanc Web viewer plugin             2.8
