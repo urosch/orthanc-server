@@ -165,7 +165,7 @@
             "unstable": "attach-custom-data",
             "artifactsOSX": "libOrthancPostgreSQLIndex.dylib libOrthancPostgreSQLStorage.dylib",
             "buildForOSX": true,
-            "extraCMakeFlags": "-DORTHANC_FRAMEWORK_SOURCE=hg -DORTHANC_FRAMEWORK_BRANCH=mainline",
+            "extraCMakeFlags": "-DORTHANC_FRAMEWORK_SOURCE=hg -DORTHANC_FRAMEWORK_BRANCH=default",
             "windows": [{
                 "Description": "PostgreSQL backend (AGPL license)",
                 "Mandatory": false,
@@ -193,7 +193,7 @@
             "unstable": "attach-custom-data",
             "artifactsOSX": "libOrthancMySQLIndex.dylib libOrthancMySQLStorage.dylib",
             "buildForOSX": true,
-            "extraCMakeFlags": "-DORTHANC_FRAMEWORK_SOURCE=hg -DORTHANC_FRAMEWORK_BRANCH=mainline",
+            "extraCMakeFlags": "-DORTHANC_FRAMEWORK_SOURCE=hg -DORTHANC_FRAMEWORK_BRANCH=default",
             "windows": [{
                 "Description": "MySQL backend (AGPL license)",
                 "Name": "mysql",
@@ -222,7 +222,7 @@
             "unstable": "attach-custom-data",
             "artifactsOSX": "libOrthancOdbcIndex.dylib libOrthancOdbcStorage.dylib",
             "buildForOSX": true,
-            "extraCMakeFlags": "-DORTHANC_FRAMEWORK_SOURCE=hg -DORTHANC_FRAMEWORK_BRANCH=mainline",
+            "extraCMakeFlags": "-DORTHANC_FRAMEWORK_SOURCE=hg -DORTHANC_FRAMEWORK_BRANCH=default",
             "windows": [{
                 "Description": "ODBC backend (AGPL license)",
                 "Mandatory": false,
