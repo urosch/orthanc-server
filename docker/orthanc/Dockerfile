@@ -341,7 +341,7 @@ COPY --from=build-orthanc /build/libServeFolders.so /usr/share/orthanc/plugins-a
 COPY --from=build-orthanc /build/libConnectivityChecks.so /usr/share/orthanc/plugins-available/
 COPY --from=build-orthanc /build/libHousekeeper.so /usr/share/orthanc/plugins-available/
 COPY --from=build-orthanc /build/libDelayedDeletion.so /usr/share/orthanc/plugins-available/
-COPY --from=build-orthanc /build/libAdvabcedStorage.so /usr/share/orthanc/plugins-available/
+COPY --from=build-orthanc /build/libAdvancedStorage.so /usr/share/orthanc/plugins-available/
 # RUN ldd /usr/bin/Orthanc
 
 COPY --from=build-plugin-pg /build/libOrthancPostgreSQLIndex.so /usr/share/orthanc/plugins-available/
