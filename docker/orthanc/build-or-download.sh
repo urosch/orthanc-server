@@ -276,7 +276,7 @@ elif [[ $target == "orthanc-volview" ]]; then
 
     if [[ $dl != 0 ]]; then
 
-        export DEBIAN_FRONTEND=noninteractive && apt-get --assume-yes update && apt-get --assume-yes install npm && apt-get clean && rm -rf /var/lib/apt/lists/*
+        export DEBIAN_FRONTEND=noninteractive && apt-get --assume-yes update && apt-get --assume-yes install npm libpixman-1-dev libcairo2-dev libsdl-pango-dev build-essential && apt-get clean && rm -rf /var/lib/apt/lists/*
 
         curl -fsSL https://deb.nodesource.com/setup_19.x | bash - && apt-get install -y nodejs
 
