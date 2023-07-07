@@ -219,7 +219,7 @@ fi
 for target in $buildTargets; do
 
     if [[ $target == $finalImageTarget ]]; then
-        tag_arg="--tag urosss/orthanc:$final_tag"
+        tag_arg="--tag osimis/orthanc:$final_tag"
     else
         tag_arg=
     fi
