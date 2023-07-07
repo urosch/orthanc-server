@@ -23,22 +23,22 @@ Release notes are available [here](https://github.com/orthanc-server/orthanc-bui
 
 # packages content
 
-#### 23.6.1 Default image
+#### 23.7.0 Default image
 ```
 component                             version
 ---------------------------------------------
-Orthanc server                        1.12.0
-Modality worklists plugin             1.12.0
-Serve folders plugin                  1.12.0
-Connectivity check plugin             1.12.0
-Housekeeper plugin                    1.12.0
-Delayed Deletion plugin               1.12.0
-Multitenant DICOM plugin              1.12.0
-Stone Web viewer plugin               2.5
+Orthanc server                        1.12.1
+Modality worklists plugin             1.12.1
+Serve folders plugin                  1.12.1
+Connectivity check plugin             1.12.1
+Housekeeper plugin                    1.12.1
+Delayed Deletion plugin               1.12.1
+Multitenant DICOM plugin              1.12.1
+Stone Web viewer plugin               2.5+4087511e8eef
 Osimis Web viewer plugin              1.4.2
 Python plugin                         4.0
 Orthanc Web viewer plugin             2.8
-DICOMweb plugin                       1.13
+DICOMweb plugin                       1.14
 PostgreSQL plugins                    5.1
 MySQL plugins                         5.1
 WSI Web viewer plugin                 1.1
@@ -55,7 +55,7 @@ Kitware's VolView plugin              1.1
 OHIF plugin                           1.0
 ```
 
-#### 23.6.1-full image 
+#### 23.7.0-full image 
 ```
 additional component                  version
 ---------------------------------------------
