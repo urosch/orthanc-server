@@ -1,4 +1,4 @@
 .vscode/
 WindowsInstaller/Configuration/ThirdPartyDownloads/
 *~
-.idea/
+!/docker/orthanc/build-or-download-oldfix.sh
